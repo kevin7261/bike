@@ -1,0 +1,171 @@
+
+<script>
+
+// Get the modal
+var modal_youbike = document.getElementById("i_dialog_info_youbike");
+var modal_data_source = document.getElementById("i_dialog_data_source");
+var modal_leagal_note = document.getElementById("i_dialog_leagal_note");
+var modal_privacy = document.getElementById("i_dialog_privacy");
+var modal_warning = document.getElementById("i_dialog_warning");
+
+var text_data_source = document.getElementById("i_text_data_source");
+var text_leagal_note = document.getElementById("i_text_leagal_note");
+var text_privacy = document.getElementById("i_text_privacy");
+
+function closeAllDialog() {
+
+    modal_youbike.style.display = "none";
+    modal_data_source.style.display = "none";
+    modal_leagal_note.style.display = "none";
+    modal_privacy.style.display = "none";
+    
+    modal_warning.style.display = "none";
+}
+
+text_data_source.onclick = function(event) {
+
+    closeAllDialog()
+
+    switch (g_version) {
+        case 0: modal_y.style.display = "block"; break;
+        case 1: modal_data_source.style.display = "block"; break;
+    }
+}
+
+text_leagal_note.onclick = function(event) {
+
+    closeAllDialog()
+
+    modal_leagal_note.style.display = "block"; 
+}
+
+text_privacy.onclick = function(event) {
+
+    closeAllDialog()
+
+    modal_privacy.style.display = "block"; 
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+
+  if (event.target == modal_youbike) {
+    modal_youbike.style.display = "none";
+  }
+  else if (event.target == modal_data_source) {
+    modal_data_source.style.display = "none";
+  }
+  else if (event.target == modal_leagal_note) {
+    modal_leagal_note.style.display = "none";
+  }
+  else if (event.target == modal_privacy) {
+    modal_privacy.style.display = "none";
+  }
+  else if (event.target == modal_warning) {
+    modal_warning.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+<div id="i_dialog_info_youbike" class="modal">
+
+  <div class="modal-content">
+  	
+    <div class="c_title_l color_main_css">Information</div>
+    <br><br>
+    <div class="c_title_m color_main_css c_line_height_40">DATA SOURCE</div>
+    <div class="c_content_l color_main_css">
+    	The basic infomation and rental data of YouBike was from 
+    	<span id="i_wiki" class="c_font_weight_400 c_cursor">Public bike sharing system in Taipei (臺北市公共自行車租賃系統)</span> 
+    	and
+    	<span id="i_rental" class="c_font_weight_400 c_cursor">Rental records of YouBike in Taipei (臺北市自行車租借紀錄)</span>.
+    	The weather data was from
+    	<span id="i_cwb" class="c_font_weight_400 c_cursor">CWB Observation Data Inquire System (觀測資料查詢系統)</span>. 
+    	We mainly analyze the data in 2019.
+    </div>
+    <br><br>
+    <div class="c_title_m color_main_css c_line_height_40">PROGRAMMING BY</div>
+    <div class="c_content_l color_main_css">Kevin Cheng (kevin7261@gmail.com)</div>
+    <br><br>
+    <div class="c_title_m color_main_css c_line_height_40">WEB DESIGN BY</div>
+    <div class="c_content_l color_main_css">Yu-Fei Huang (420351844@qq.com)</div>
+    <br><br>
+    <div class="c_title_m color_main_css c_line_height_40">VERSION (RELEASE DATE)</div>
+    <div class="c_content_l color_main_css">1.0 (20.02.2020)</div>
+
+  </div>
+
+</div>
+
+<div id="i_dialog_data_source" class="modal">
+
+  <div class="modal-content">
+
+    <div class="c_title_l color_main_css">Data Source</div>
+    <br><br>
+    <div class="c_title_m color_main_css c_line_height_40">TAIPEI</div>
+    <div>
+      <div>
+          <a class="c_content_info color_main_css text_dec_underline c_cursor" href="https://zh.wikipedia.org/wiki/%E8%87%BA%E5%8C%97%E5%B8%82%E5%85%AC%E5%85%B1%E8%87%AA%E8%A1%8C%E8%BB%8A%E7%A7%9F%E8%B3%83%E7%B3%BB%E7%B5%B1" target="_blank">
+        Public bike sharing system in Taipei (臺北市公共自行車租賃系統)
+        </a>
+      </div>
+      <div>
+          <a class="c_content_info color_main_css text_dec_underline c_cursor" href="https://data.gov.tw/dataset/100095" target="_blank">
+        Rental records of YouBike in Taipei (臺北市自行車租借紀錄)
+        </a>
+      </div>
+      <div>
+          <a class="c_content_info color_main_css text_dec_underline c_cursor" href="https://e-service.cwb.gov.tw/HistoryDataQuery/index.jsp" target="_blank">
+        CWB Observation Data Inquire System (觀測資料查詢系統)
+        </a>
+      </div>
+    </div>
+    <br>
+    <div class="c_title_m color_main_css c_line_height_40">BERLIN</div>
+
+
+  </div>
+
+</div>
+
+
+<div id="i_dialog_leagal_note" class="modal">
+
+  <div class="modal-content">
+
+    <div class="c_title_l color_main_css">Leagal Note</div>
+
+  </div>
+
+</div>
+
+
+
+<div id="i_dialog_privacy" class="modal">
+
+  <div class="modal-content">
+
+    <div class="c_title_l color_main_css">Privacy</div>
+
+  </div>
+
+</div>
+
+
+
+
+<div id="i_dialog_warning" class="modal_warning">
+
+  <div class="modal-content_warning">
+
+    <div class="c_content_l color_main_css">
+        The best screen size to browse is 1366 × 768.
+    </div>
+
+  </div>
+
+</div>

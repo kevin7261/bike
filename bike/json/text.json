@@ -1,0 +1,555 @@
+{
+	"text":{
+		"taipei":{
+			"en":"TAIPEI",
+			"zh":"台北",
+			"de":"TAIPEI"
+		},
+		"taipei_city":{
+			"en":"TAIPEI CITY",
+			"zh":"台北市",
+			"de":"TAIPEI CITY"
+		},
+		"taipei_metro_area":{
+			"en":"TAIPEI METROPOLITAN AREA",
+			"zh":"台北都會區",
+			"de":""
+		},
+		"berlin":{
+			"en":"BERLIN",
+			"zh":"柏林",
+			"de":"BERLIN"
+		},
+		"berlin_inner_city":{
+			"en":"BERLIN INNER CITY",
+			"zh":"柏林市中心",
+			"de":""
+		},
+		"population":{
+			"en":"POPULATION",
+			"zh":"人口",
+			"de":""
+		},
+		"bikes":{
+			"en":"BIKES",
+			"zh":"車輛數",
+			"de":""
+		},
+		"trips":{
+			"en":"TRIPS",
+			"zh":"租借數",
+			"de":""
+		},
+		"rental_stations":{
+			"en":"RENTAL STATIONS",
+			"zh":"租借站",
+			"de":""
+		},
+		"weekday":{
+			"en":"WEEKDAY",
+			"zh":"平日",
+			"de":""
+		},
+		"weekend":{
+			"en":"WEEKEND",
+			"zh":"周末",
+			"de":""
+		},
+		"precipitation":{
+			"en":"PRECIPITATION",
+			"zh":"降雨量",
+			"de":""
+		},
+		"precipitation_hour":{
+			"en":"PRECIPITATION HOURS",
+			"zh":"降雨時數",
+			"de":""
+		},
+		"data_loss":{
+			"en":"DATA LOSS",
+			"zh":"資料遺失",
+			"de":""
+		},
+		"median":{
+			"en":"MEDIAN",
+			"zh":"中位數",
+			"de":"MEDIAN"
+		},
+		"all":{
+			"en":"All",
+			"zh":"全部",
+			"de":""
+		},
+		"return_to_diff_sta":{
+			"en":"Return to Different Station",
+			"zh":"借還不同站",
+			"de":""
+		},
+		"return_to_same_sta":{
+			"en":"Return to Same Station",
+			"zh":"借還同站",
+			"de":""
+		},
+		"relative":{
+			"en":"Relative",
+			"zh":"比例值",
+			"de":""
+		},
+		"absolute":{
+			"en":"Absolute",
+			"zh":"實際值",
+			"de":""
+		},
+		"scale":{
+			"en":"SCALE",
+			"zh":"尺度",
+			"de":""
+		},
+		"type":{
+			"en":"TYPE",
+			"zh":"類型",
+			"de":""
+		},
+		"company":{
+			"en":"COMPANY",
+			"zh":"營運公司",
+			"de":""
+		},
+		"km":{
+			"en":"km",
+			"zh":"公里",
+			"de":"km"
+		},
+		"min":{
+			"en":"min",
+			"zh":"分鐘",
+			"de":"min"
+		},
+		"week":{
+			"en":"WEEK",
+			"zh":"星期",
+			"de":"WOCHE"
+		},
+		"week_name":[
+			{ "en":"Mon", "zh":"星期一", "de":"Mo" },
+			{ "en":"Tue", "zh":"星期二", "de":"Di" },
+			{ "en":"Wed", "zh":"星期三", "de":"Mi" },
+			{ "en":"Thu", "zh":"星期四", "de":"Do" },
+			{ "en":"Fri", "zh":"星期五", "de":"Fr" },
+			{ "en":"Sat", "zh":"星期六", "de":"Sa" },
+			{ "en":"Sun", "zh":"星期日", "de":"So" }
+		],
+		"month":{
+			"en":"MONTH",
+			"zh":"月份",
+			"de":"MONAT"
+		},
+		"month_name":[
+			{ "en":"Jan", "zh":"1月", "de":"Jan" },
+			{ "en":"Feb", "zh":"2月", "de":"Feb" },
+			{ "en":"Mar", "zh":"3月", "de":"Mär" },
+			{ "en":"Apr", "zh":"4月", "de":"Apr" },
+			{ "en":"May", "zh":"5月", "de":"Mai" },
+			{ "en":"Jun", "zh":"6月", "de":"Jun" },
+			{ "en":"Jul", "zh":"7月", "de":"Jul" },
+			{ "en":"Aug", "zh":"8月", "de":"Aug" },
+			{ "en":"Sep", "zh":"9月", "de":"Sep" },
+			{ "en":"Oct", "zh":"10月", "de":"Okt" },
+			{ "en":"Nov", "zh":"11月", "de":"Nov" },
+			{ "en":"Dec", "zh":"12月", "de":"Dez" }
+		],
+		"date":{
+			"en":"Date",
+			"zh":"日期",
+			"de":""
+		},
+		"number_of_trips":{
+			"en":"Number of Trips",
+			"zh":"租借量",
+			"de":""
+		},
+		"hours":{
+			"en":"hours",
+			"zh":"小時",
+			"de":""
+		},
+		"mountain":{
+			"en":"Mountain",
+			"zh":"山區",
+			"de":"Berg"
+		},
+		"plain":{
+			"en":"Plain",
+			"zh":"平地",
+			"de":"Ebene"
+		},
+		"river":{
+			"en":"River",
+			"zh":"河流",
+			"de":"Fluss"
+		},
+		"park":{
+			"en":"Park",
+			"zh":"公園",
+			"de":"Park"
+		},
+		"berlin_ringbahn":{
+			"en":"Berlin Ringbahn",
+			"zh":"柏林城市快鐵環線",
+			"de":"Berlin Ringbahn"
+		},
+		"trips_number_of_the_selected_area":{
+			"en":"TRIPS NUMBER OF THE SELECTED AREA",
+			"zh":"選取區域的租借量分布",
+			"de":""
+		},
+		"compare_with_all":{
+			"en":"COMPARE WITH ALL",
+			"zh":"與全部比較",
+			"de":""
+		},
+		"compare_with_itself":{
+			"en":"COMPARE WITH ITSELF",
+			"zh":"與選取區域比較",
+			"de":""
+		},
+		"landmark":{
+			"en":"Landmark",
+			"zh":"地標",
+			"de":"Landmarke"
+		},
+		"keelung_river":{
+			"en":"Keelung River",
+			"zh":"基隆河",
+			"de":"Keelung-Fluss"
+		},
+		"tamsui_river":{
+			"en":"Tamsui River",
+			"zh":"淡水河",
+			"de":"Tamsui-Fluss"
+		},
+		"tsa":{
+			"en":"TSA",
+			"zh":"松山機場",
+			"de":"TSA"
+		},
+		"taipei_main_station":{
+			"en":"Taipei Main Station",
+			"zh":"台北車站",
+			"de":"Taipei Hbf"
+		},
+		"taipei_101":{
+			"en":"Taipei 101",
+			"zh":"台北101",
+			"de":"Taipei 101"
+		},
+		"ntu":{
+			"en":"National Taiwan Univ.",
+			"zh":"台灣大學",
+			"de":""
+		},
+		"berlin_hbf":{
+			"en":"Berlin Hbf",
+			"zh":"柏林火車總站",
+			"de":"Berlin Hbf"
+		},
+		"zoo_garten":{
+			"en":"Zoologischer Garten",
+			"zh":"動物園",
+			"de":"Zoologischer Garten"
+		},
+		"alexanderplatz":{
+			"en":"Alexanderplatz",
+			"zh":"亞歷山大廣場",
+			"de":"Alexanderplatz"
+		},
+		"tiergarten":{
+			"en":"Tiergarten",
+			"zh":"蒂爾加滕公園",
+			"de":"Tiergarten"
+		},
+		"tempelhofer_feld":{
+			"en":"Tempelhofer Feld",
+			"zh":"滕珀爾霍夫公園",
+			"de":"Tempelhofer Feld"
+		},
+		"spree":{
+			"en":"Spree",
+			"zh":"施普雷河",
+			"de":"Spree"
+		},
+		"landwehrkanal":{
+			"en":"Landwehrkanal",
+			"zh":"蘭維爾運河",
+			"de":"Landwehrkanal"
+		}
+	},
+	"title":{
+		"youbike":{
+			"en":"How People Use YouBike in Taipei?",
+			"zh":"台北市YouBike使用概況分析",
+			"de":""
+		},
+		"berlin":{
+			"en":"How People Use Sharing Bike in Taipei & Berlin?",
+			"zh":"共享單車使用分析 台北 v.s 柏林",
+			"de":""
+		}
+	},
+	"intro":{
+		"youbike":{
+			"title":{
+				"en":"How People Use YouBike in Taipei?",
+				"zh":"台北市YouBike使用概況分析",
+				"de":""},
+			"content":{
+				"en":"Bike sharing system has been widely established in many cities around the world today. <span class='c_font_weight_400 color_red_css'>Taipei City</span> has been operating a bike sharing system since 2009 as well, called <span class='c_font_weight_400'>YouBike</span>, and it allows users to rent and return bikes at rental stations. We will observe the rental data in 2019 to understand how the citizens use this convenient service.",
+				"zh":"自法國里昂在2005年建置了世界上第一座共享單車系統至今，全世界已經有超過1000座城市開始了自已的共享單車計劃，而台灣也在2009年以公辦民營的方式推出了<span class='c_font_weight_400'>YouBike</span>，提供了台北都會區居民完善的共享單車服務，這同時也是台灣的第一套共享單車系統，使用者可以在遍布市內各地的租借站租借單車出行或運動，並可在相同或不同站點歸還單車。本網站將透過分週、分日、分時、分區…等方式，並輔以區分租還同站與租還不同站的分析，逐步觀察YouBike在台北市的使用概況。在此必需特別說明的是，雖然<span class='c_font_weight_400 color_red_css'>台北市</span>與新北市同屬台北都會區生活圈，但因新北市未提供詳細的租借資料，因此本網站將借專注分析2019年全年的台北市租借資料。",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"How People Use Sharing Bike in Taipei & Berlin?",
+				"zh":"共享單車使用分析<br>台北 v.s 柏林",
+			"de":"Wie nutzen die Leute das Fahrrad in Taipeh und Berlin?"},
+			"content":{
+				"en":"Bike sharing system has been widely established in many cities today. <span class='c_font_weight_400 color_red_css'>Taipei City</span> and <span class='c_font_weight_400 color_red_css'>Berlin Inner City</span> have been operating bike sharing systems.  It's called <span class='c_font_weight_400 color_green_css'>YouBike</span> in Taipei, and it allows users to rent and return bikes at rental stations. There are three main bike sharing compaines, <span class='c_font_weight_400 color_blue_css'>Nextbike</span>, <span class='c_font_weight_400 color_blue_css'>Lidlbike</span> and <span class='c_font_weight_400 color_blue_css'>Mobike</span>, in Berlin Inner City. People can rent and return the bikes randomly inside the city. We will compare the rental data in Taipei City in 2019 and Berlin Inner City in Apr.-Nov. 2019. It should be noted that due to the webpage was changed during data scraping, some of the data in Berlin were lost.",
+				"zh":"共享單車今日已在全世界各大城市廣為設立，台北與柏林都建立了自已的共享單車服務。台北的共享單車服務始自2009年，稱為<span class='c_font_weight_400 color_green_css'>YouBike</span>，使用者可以在遍布市內各地的租借站租借與歸還。而柏林則有三間主要的營運公司，分別是<span class='c_font_weight_400 color_blue_css'>Nextbike</span>、<span class='c_font_weight_400 color_blue_css'>Lidlbike</span>與<span class='c_font_weight_400 color_blue_css'>Mobike</span>，分為固定場站式租借與無樁式任意租借。本網站將分析與比較2019年全年台北的固定場站共享單車租借資料，以及2019年4月到11月的柏林無樁式共站單車服務的租借資料。另需說明的是，由於柏林的資料在收集時有部分日期因網頁的變動而丟失，因此會有些許的失真。",
+				"de":""}
+		}
+	},
+	"intro_mobile":{
+		"youbike":{
+			"title":{
+				"en":"How People Use YouBike in Taipei?"},
+			"content":{
+				"en":"Bike sharing system has been widely established in many cities around the world today. <span class='c_font_weight_400 color_red_css'>Taipei City</span> has been operating a bike sharing system since 2009 as well, called <span class='c_font_weight_400'>YouBike</span>, and it allows users to rent and return bikes at rental stations. We will observe the rental data in 2019 to understand how the citizens use this convenient service."}
+		},
+		"berlin":{
+			"title":{
+				"en":"How People Use Sharing Bike in Taipei & Berlin?"},
+			"content":{
+				"en":"Bike sharing system has been widely established in many cities today. <span class='c_font_weight_400 color_red_css'>Taipei City</span> and <span class='c_font_weight_400 color_red_css'>Berlin Inner City</span> have been operating bike sharing systems.  It's called <span class='c_font_weight_400 color_green_css'>YouBike</span> in Taipei, and it allows users to rent and return bikes at rental stations. There are three main bike sharing compaines, <span class='c_font_weight_400 color_blue_css'>Nextbike</span>, <span class='c_font_weight_400 color_blue_css'>Lidlbike</span> and <span class='c_font_weight_400 color_blue_css'>Mobike</span>, in Berlin Inner City. People can rent and return the bikes randomly inside the city. We will compare the rental data in Taipei City in 2019 and Berlin Inner City in Apr.-Nov. 2019. It should be noted that due to the webpage was changed during data scraping, some of the data in Berlin were lost."}
+		}
+	},
+	"weekly":{
+		"youbike":{
+			"title":{
+				"en":"More People Ride on Weekdays Than Weekends",
+				"zh":"平日租借比周末多",
+				"de":""},
+			"content":{
+				"en":"The median of trips in relative scale on weekdays is higher than on weekends. Although the trips number of return to same station is only about 10% of the total, but its median in relative scale of weekends is higher than on weekdays obviously. We guess that more users may want to ride for recreation on weekends.",
+				"zh":"這是一周七日每日租借量中位數的長條圖，觀察其比例分布可以發現平日的租借量明顯多於周末。雖然同站租還的租借量只有全部的十分之一左右，但其租借比例卻明顯是周末多於平日，是否是大家比較喜歡使用YouBike在周末進行休閒活動呢？透過比例值與實際值的比對，你可以更容易看出全部租借量相對於借還同站與借還不同站租借量之間的差異。",
+				"de":""},
+			"title_sub":{
+				"en":"Median of the Trips Number on Weekdays in 2019",
+				"zh":"2019年週間租借量中位數",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Change is Not Obvious",
+				"zh":"週間變化不明顯",
+				"de":""},
+			"content":{
+				"en":"Due to the data is incomplete, the difference during the weekday are not obvious, but it can still be found that the number of trips in weekend is lower. Is it because Germany ralely work on weekends?",
+				"zh":"基於資料不完整的原因，週間的變化無法明顯看出其規律，但仍可發現周末的租借量偏低，或許是德國人較少於假日工作造成。",
+				"de":""},
+			"title_sub":{
+                "en":"Median of the Trips Number on Weekdays between Apr.-Nov. 2019",
+                "zh":"2019年4月至11月週間租借量中位數",
+                "de":""}
+		}
+	},
+	"weekly_mobile":{
+		"youbike":{
+			"title":{
+				"en":"More People Ride on Weekdays Than Weekends"},
+			"content":{
+				"en":"The median of trips in relative scale on weekdays is higher than on weekends."}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Change is Not Obvious"},
+			"content":{
+				"en":"Due to the data is incomplete, the difference during the weekday are not obvious, but it can still be found that the number of trips in weekend is lower. Is it because Germany ralely work on weekends?"}
+		}
+	},
+	"daily":{
+		"youbike":{
+			"title":{
+				"en":"Riding on a Rainy Day? Not a Good Idea",
+				"zh":"雨天不想騎車",
+				"de":""},
+			"content":{
+				"en":"When the precipitation is higer and longer, the number of trips drops significantly. Otherwise, there are about 80,000 trips per day on average, and fewer on weekends. Another notable fact is that the season does not influence the citizen to rent the bike.",
+				"zh":"以每日租借量長條圖來看，平均每日大約有8萬多次租借，但若遇到降雨時間較長或降雨量較高的日子時，租借量則明顯下降。此圖同時也可看出周末的租借量明顯較平日少一些。透過月份的選擇，你或許可以發現，在天氣影響方面，季節的變化和租借量的多寡沒有明顯關聯，當天有沒有下雨才是影響市民騎車意願的主要因子。你可以將游標移入圖表以觀察每日的的租借量與降雨量之間的關係。",
+				"de":""},
+			"title_sub":{
+				"en":"Number of Trips and Precipitation in 2019",
+				"zh":"2019年每日租借量與降雨量",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Content of the Data in Berlin Inner City",
+				"zh":"觀察資料分布",
+				"de":""},
+			"content":{
+				"en":"Although the data is incomplete, we can observe the distribution of the data by this graph to know when the data is missing. After clicking the month menu, if you see the day with 0 trips, it means that the data on the date is lost. In addition, we also found that on raining days, the number of trips are lower, but the change was not as obvious as in Taipei. Unfortunately, we can not get the data of precipitation hour to do further comparison.",
+				"zh":"雖然資料不完整，但透過此圖仍可看出我們所獲得的資料分布以了解短缺了那些日子的資料。點選月份選單後，若看到租借量為0的日子，便表示此日期之資料遺失。另外，我們也發現某些降雨量較高的日期，其租借量有偏低的現象，但其變化不如台北明顯，可惜無法取得降雨時數的資料做進一步的比對。",
+				"de":""},
+			"title_sub":{
+				"en":"Number of Trips and Precipitation between Apr.-Nov. 2019",
+                "zh":"2019年4月至11月分時租借量中位數",
+				"de":""}
+		}
+	},
+	"daily_mobile":{
+		"youbike":{
+			"title":{
+				"en":"Riding on a Rainy Day? Not a Good Idea"},
+			"content":{
+				"en":"When the precipitation is higer and longer, the number of trips drops significantly. Otherwise, there are about 80,000 trips per day on average, and fewer on weekends. Another notable fact is that the season does not influence the citizen to rent the bike."}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Content of the Data in Berlin Inner City"},
+			"content":{
+				"en":"Although the data is incomplete, we can observe the distribution of the data by this graph to know when the data is missing. In addition, we also found that on raining days, the number of trips are lower, but the change was not as obvious as in Taipei. Unfortunately, we can not get the data of precipitation hour to do further comparison."}
+		}
+	},
+	"hourly":{
+		"youbike":{
+			"title":{
+				"en":"Commute on Weekdays, Recreation on Weekends?",
+				"zh":"平日通勤周末休閒",
+				"de":""},
+			"content":{
+				"en":"Most people ride for commuting on weekdays, and the peak times are 8am and 6pm. The number of trips rises slowly on weekend, it seems that many people go out late. Interstingly, during the lunch time on weekdays, there is a smaller peak on the data of return at same station. The riders may rent the bikes to go to lunch.",
+				"zh":"將一日分時租借量的中位數分為平日與假日，並以折線圖的方式呈現後，可以發現平日因為上下班，所以租借高峰為上午8點與下午5點，周末則自上午6點開始緩步上升。平日中午12點有另一小峰值，而且主要是租還同站，猜測應是許多上班族於此時外出用餐。另外，此圖也可發現借還不同站的租借量在平日明顯較周末高，但借還同站在平日卻與周末相差無幾，或許是多數人在假日並不使用YouBike通勤，而是以休閒活動為主，所以才會又返回相同的租借站。你可以將游標移入圖表以觀察各個時段的租借量變化。",
+				"de":""},
+			"title_sub":{
+				"en":"Median of Trips in a Day between in 2019",
+				"zh":"2019年分時租借量中位數",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Path is Similar to Taipei",
+				"zh":"曲線與台北相似",
+				"de":""},
+			"content":{
+				"en":"The path is quite similar to Taipei. On weekday, the peaks of the number of trips are at 6 am and 4 pm, and the number of trips on weekends is not less than weekdays, and mainly on daytime, especially at 12pm.",
+				"zh":"分時的曲線與台北相當相似，平日峰值出現在上午6點與下午4點，而周末的租借量也不比平日少，但主要集中在白天，峰值出現在中午12點。",
+				"de":""},
+			"title_sub":{
+				"en":"Median of Trips in a Day between Apr.-Nov. 2019",
+				"zh":"2019年4月至11月分時租借量中位數",
+				"de":""}
+		}
+	},
+	"hourly_mobile":{
+		"youbike":{
+			"title":{
+				"en":"Commute on Weekdays, Recreation on Weekends?"},
+			"content":{
+				"en":"Most people ride for commuting on weekdays, and the peak times are 8am and 6pm. The number of trips rises slowly on weekend, it seems that many people go out late. Interstingly, during the lunch time on weekdays, there is a smaller peak. The riders may rent the bikes to go to lunch."}
+		},
+		"berlin":{
+			"title":{
+				"en":"The Path is Similar to Taipei"},
+			"content":{
+				"en":"The path is quite similar to Taipei. On weekday, the peaks of the number of trips are at 6 am and 4 pm, and the number of trips on weekends is not less than weekdays, and mainly on daytime, especially at 12pm."}
+		}
+	},
+	"duration_distance":{
+		"youbike":{
+			"title":{
+				"en":"Complete the Last Mile",
+				"zh":"完成最後一哩",
+				"de":""},
+			"content":{
+				"en": "Each rental trip is about 0.9 km and 9 minutes long, so it can be guessed that most people use it for commuting. This matches the idea of citizens are using sharing bikes as \"the last mile\" or \"short-distance transportation\". We do not know the riding distance if the user returns the bike to the same station, but we know that the median riding duration is 24 minutes. This is obviously longer than returns made at a different station.",
+				"zh":"由騎乘時間與騎乘距離的租借量長條圖可知，每次租借大約騎乘0.9公里，前後約9分鐘，由此可推測大多數人租借共享單車主要是做為通勤使用，這點符合城市使用共享單車系統作為大眾運輸中「最後一哩」或「短程交通」的設計。而觀察借還同站的租借量也可發現，其平均騎乘了24分鐘，的確比借還不同站久上許多，雖然我們無法得知其租借後的騎乘路線。將游標移入圖表可以進一步了解每分鐘與每距離的租借量。",
+				"de":""},
+			"title_duration":{
+				"en":"Trip Duration in 2019",
+				"zh":"2019年騎乘時間租借量",
+				"de":""},
+			"title_distance":{
+				"en":"Trip Distance in 2019",
+				"zh":"2019年騎乘距離租借量",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"Riding Duration and Distance are Longer Than Taipei",
+				"zh":"騎乘距離與時間比台北長",
+				"de":""},
+			"content":{
+				"en":"Apprently, the riding duration and distance are longer than Taipei, but its distribution is similar to Taipei. It can be infered that most users are use sharing bikes as \"the last mile\" or \"short distance transportation\" as well.",
+				"zh":"從圖表可以很明顯看出柏林的平均騎乘時間與平均距離都比台北長，分別為24分鐘與1.5公里，但其分布樣態卻與台北相似，可以推測多數使用者也是使用共享單車做為「最後一哩」或是「短程距離」的交通工具。",
+				"de":""},
+			"title_duration":{
+				"en":"Trip Duration between Apr.-Nov. 2019",
+				"zh":"2019年4月至11月騎乘時間租借量",
+				"de":""},
+			"title_distance":{
+				"en":"Trip Distance between Apr.-Nov. 2019",
+				"zh":"2019年4月至11月騎乘距離租借量",
+				"de":""}
+		}
+	},
+	"duration_distance_mobile":{
+		"youbike":{
+			"title":{
+				"en":"Complete the Last Mile"},
+			"content":{
+				"en": "Each rental trip is about 0.9 km and 9 minutes long, so it can be guessed that most people use it for commuting. This matches the idea of citizens are using sharing bikes as \"the last mile\" or \"short-distance transportation\". We do not know the riding distance if the user returns the bike to the same station, but we know that the median riding duration is 24 minutes. This is obviously longer than returns made at a different station."}
+		},
+		"berlin":{
+			"title":{
+				"en":"Riding Duration and Distance are Longer Than Taipei"},
+			"content":{
+				"en":"Apprently, the riding duration and distance are longer than Taipei, but its distribution is similar to Taipei. It can be infered that most users are use sharing bikes as \"the last mile\" or \"short distance transportation\" as well."}
+		}
+	},
+	"mesh":{
+		"youbike":{
+			"title":{
+				"en":"Terrain Becomes a Barrier",
+				"zh":"地形成為阻礙",
+				"de":""},
+			"content":{
+				"en": "The rental stations are mostly located in the plain area of Taipei City, which is surrounded by mountains and rivers. There are obviously more trips in the downtown area. The size of the circle is the number of trips in the area. You can move the cursor to the circles to know which destinations riders are renting the bikes to ride to from that area, and you may find the riders usually don't ride for too long. Another interesting fact is that riders generally don't ride across rivers or mountains, terrain becomes a barrier apparently.",
+				"zh":"台北市是個被山與河包圍的城市，而YouBike場站大多座落在台北市的平原地區，使用者也多數在市區內租借單車。地圖上各區域圓圈大小代表該地的租借量，將游標移至各區域可以知道該區域的租借者都騎到什麼地方，你可以發現大多明顯以附近的位置為主。另外一個有趣的地方是，多數的使用者不會騎車過河或過山，台北多山的地形與河流切割了市區也是影響騎乘行為的重大因素之一。",
+				"de":""}
+		},
+		"berlin":{
+			"title":{
+				"en":"Don't Ride Across the City",
+				"zh":"不穿越市區",
+				"de":""},
+			"content":{
+				"en":"Berlin Inner City is an area within the <span class='c_font_weight_400 color_brown_css'>Berlin Ringbahn</span>, which is roughly similar to downtown area of Taipei. The population of Berlin Inner City is only half of Taipei. Same as Taipei, the riding distance is not long, and few people ride across the city. The cycling route in Berlin is less affected by terrain, this is different with Taipei. It may be because there are no hills in the city, and the width of the rivers are narrower than Taipei.",
+				"zh":"柏林市中心指的是柏林城市快鐵環線內的區域，其面積與台北市區相差不大，但人口卻僅有台北的一半。觀察各分區租借量可以發現與台北相同的是柏林租借的騎乘距離也不長，且很少有人租借共享單車跨越城市。而與台北不同的是，柏林單車騎乘路線較不受地形阻隔，可能因為市區是平原，且河流寬度也比台北較為狹窄的關係。",
+				"de":""}
+		}
+	},
+	"mesh_mobile":{
+		"youbike":{
+			"title":{
+				"en":"Terrain Becomes a Barrier"},
+			"content":{
+				"en": "The rental stations are mostly located in the plain area of Taipei City, which is surrounded by mountains and rivers. There are obviously more trips in the downtown area. The size of the circle is the number of trips in the area. Another interesting fact is that riders generally don't ride across rivers or mountains, terrain becomes a barrier apparently."}
+		},
+		"berlin":{
+			"title":{
+				"en":"Don't Ride Across the City"},
+			"content":{
+				"en":"Berlin Inner City is an area within the <span class='c_font_weight_400 color_brown_css'>Berlin Ringbahn</span>, which is roughly similar to downtown area of Taipei. The population of Berlin Inner City is only half of Taipei. The cycling route in Berlin is less affected by terrain, this is different with Taipei. It may be because there are no hills in the city, and the width of the rivers are narrower than Taipei."}
+		}
+	}
+}

@@ -1,0 +1,127 @@
+.c_title_l {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 40px;
+}
+
+.c_title_m {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 0px;
+}
+
+.c_content_l {
+  font-size: 1.25rem;
+  font-weight: 100;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.c_content_l_bold {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.c_content_m {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 0px;
+}
+
+.c_content_ll {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+
+.c_margin_top_10      { margin-top: 10px; }
+.c_margin_bottom_10   { margin-bottom: 10px; }
+
+.c_font_size_rem_4    { font-size: 4rem; }
+.c_font_size_rem_3    { font-size: 3rem; }
+.c_font_size_rem_2_5  { font-size: 2.5rem; }
+.c_font_size_rem_2    { font-size: 2rem; }
+.c_font_size_rem_1_5  { font-size: 1.5rem; }
+.c_font_size_rem_1_25 { font-size: 1.25rem; }
+.c_font_size_rem_1    { font-size: 1rem; }
+.c_font_size_rem_0_75 { font-size: 0.75rem; }
+
+.c_font_weight_100 { font-weight: 100; }
+.c_font_weight_200 { font-weight: 200; }
+.c_font_weight_300 { font-weight: 300; }
+.c_font_weight_400 { font-weight: 400; }
+.c_font_weight_500 { font-weight: 500; }
+.c_font_weight_600 { font-weight: 600; }
+.c_font_weight_700 { font-weight: 700; }
+.c_font_weight_800 { font-weight: 800; }
+.c_font_weight_900 { font-weight: 900; }
+
+.c_letter_spacing_4 { letter-spacing: 4px; }
+.c_letter_spacing_3 { letter-spacing: 3px; }
+.c_letter_spacing_2 { letter-spacing: 2px; }
+.c_letter_spacing_1_5 { letter-spacing: 1.5px; }
+.c_letter_spacing_1 { letter-spacing: 1px; }
+.c_letter_spacing_0_5 { letter-spacing: 0.5px; }
+.c_letter_spacing_0 { letter-spacing: 0px; }
+.c_letter_spacing_M0_75 { letter-spacing: -0.75px; }
+.c_letter_spacing_M0_5 { letter-spacing: -0.5px; }
+.c_letter_spacing_M0_25 { letter-spacing: -0.25px; }
+.c_letter_spacing_M1 { letter-spacing: -1px; }
+.c_letter_spacing_M1_5 { letter-spacing: -1.5px; }
+.c_letter_spacing_M2 { letter-spacing: -2px; }
+
+.c_line_height_48 { line-height: 48px; }
+.c_line_height_44 { line-height: 44px; }
+.c_line_height_40 { line-height: 40px; }
+.c_line_height_36 { line-height: 36px; }
+.c_line_height_32 { line-height: 32px; }
+.c_line_height_28 { line-height: 28px; }
+.c_line_height_26 { line-height: 26px; }
+.c_line_height_24 { line-height: 24px; }
+.c_line_height_0  { line-height: 0px; }
+
+.opacity_1_0 { opacity: 1.0; }
+.opacity_0_8 { opacity: 0.8; }
+.opacity_0_6 { opacity: 0.6; }
+.opacity_0_5 { opacity: 0.5; }
+.opacity_0_4 { opacity: 0.4; }
+.opacity_0_3 { opacity: 0.3; }
+.opacity_0_2 { opacity: 0.2; }
+.opacity_0_0 { opacity: 0.0; }
+
+.c_text_align_center { text-align: center; }
+
+.c_text_anchor_start { text-anchor: start; }
+.c_text_anchor_middle { text-anchor: middle; }
+.c_text_anchor_end { text-anchor: end; }
+
+.color_white_svg { fill: #FEFEFE; }
+.color_white_css { color: #FEFEFE; }
+.color_grey_svg { fill: #999999; }
+.color_grey_css { color: #999999; }
+.color_main_svg { fill: #014666; }
+.color_main_css { color: #014666; }
+.color_red_svg { fill: #FFA07A; }
+.color_red_css { color: #FFA07A; }
+.color_green_svgs { fill: #90EE90; }
+.color_green_css { color: #90EE90; }
+.color_blue_svg { fill: #87CEFA; }
+.color_blue_css { color: #87CEFA; }
+.color_brown_svg { fill: #D2B48C; }
+.color_brown_css { color: #D2B48C; }
+
+.text_dec_underline { 
+  text-decoration: underline; 
+}
+
+.text_dec_none { 
+  text-decoration: none; 
+}
+
+.c_cursor { cursor: pointer; }

@@ -1,0 +1,175 @@
+@media (max-width: 960px) {
+
+  #i_main_mobile {
+
+    display: inline;
+    position: static;
+  }
+
+  #i_main_mobile_title {
+
+    width: 100%;
+
+    position: fixed;
+
+    text-align: left;
+
+    background-color: #014666;
+
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+
+    z-index: 999;
+  }
+
+  #i_main_mobile_title_image {
+    
+    margin: 0px auto;
+
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  #i_main_mobile_title_warning {
+    
+    margin: 0px auto;
+    height: 15px;
+
+    /*background-color:rgba(1, 70, 106, 0.5);*/
+    /*background-color: #014666;*/
+    background-color: #FFA07A;
+    color: #014666;
+    /*color: #014666;*/
+
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    display: none;
+  }
+
+  #i_main_mobile_content {
+
+    width: 90%;
+
+    margin: 0 auto;
+  }
+
+  .c_div_mobile {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c_div_mobile_legend {
+    margin-left: 5%;
+  }
+
+  .c_image_mobile {
+    width: 90%;
+    height: 100%;
+  }
+
+  .c_image_legend_mobile {
+    width: 320px;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  #i_main_mobile {
+    display: none;
+  }
+
+  main {
+    display: inline;
+  }
+}
+
+
+
+
+body {
+
+  margin: 0px;
+
+  background-color: #014666;
+}
+
+div {
+
+  font-size: 12px;
+
+  font-family: 'Public Sans', 'Noto Sans TC', sans-serif;
+
+  letter-spacing: 1px;　
+
+  margin: 0px;
+}
+
+.leaflet-container {
+    background-color:rgba(0, 0, 0, 0);
+}
+
+#div_id_main_title {
+
+  /*width: 960px; */
+
+  margin: 0px auto;
+
+  padding-top: 0px;
+  padding-bottom: 20px;
+
+  text-align: left;
+
+  letter-spacing: 0.5px;　
+}
+
+#div_id_main_basic {
+
+  /*width: 960px; */
+}
+
+#div_id_main_weekly {
+
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+#div_id_main_duration {
+
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+ 
+ #i_btn_hourly_show_type {
+
+  pointer-events:none; 
+ }
+
+.c_title_city {
+
+  color: #014666;
+
+  background-color: #FEFEFE;
+
+  display:inline-block;
+
+  border-radius: 10px;
+
+  border-width: 0;
+
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.c_title_background {
+
+  rx: 8pt;
+  ry: 8pt;
+}

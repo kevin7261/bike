@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133306735-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-133306735-1');
+	</script>
+
+	<meta name="description" content="Scrollama: Sticky Side Example">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="image/bike.gif">
+
+	<link rel='stylesheet' href='css/style.css'>
+
+	<script src='https://unpkg.com/d3@5.9.1/dist/d3.min.js'></script>
+	<script src='https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js'></script>
+
+	<!-- Load d3-annotation -->
+	<script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+
+    <script type="text/javascript" src="js/define.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/text.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/load.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/util.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/main.js" charset="utf-8"></script> 
+
+    <script type="text/javascript" src="js/draw_intro.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_intro_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_intro_berlin.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_weekly.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_weekly_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_weekly_berlin.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_daily.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_daily_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_daily_berlin.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_hourly.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_hourly_path_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_hourly_path_berlin.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_duration_distance.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_duration_distance_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_duration_distance_berlin.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_mesh.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_mesh_youbike.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="js/draw_mesh_berlin.js" charset="utf-8"></script> 
+
+</head>
+
+<body>
+
+	<section id='i_main_mobile'>
+
+			<div id='i_main_mobile_title'>
+				<div id='i_main_mobile_title_warning'>
+					The best screen size to browse is 1366 × 768.
+				</div> 
+				<div id='i_main_mobile_title_image'>
+					<img src="image/berlin_tech.gif" height="25px">
+				</div> 
+			</div> 
+
+			<div id='i_main_mobile_content'>
+
+				<br><br><br><br><br><br>
+				<div>
+					<div id="i_title_intro_mobile" class='c_title_l color_white_css'></div><br>
+					<div id='i_content_intro_mobile' class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/1.png"></div>
+				</div>
+				<br><br><br>
+				<div class="c_youbike">
+					<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+					<div id="i_title_weekly_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_weekly_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/2_0.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/2_0_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_berlin">
+					<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+					<div id="i_title_weekly_berlin_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_weekly_berlin_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/2_1.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/2_1_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_youbike">
+					<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+					<div id="i_title_daily_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_daily_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/3_0.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/3_0_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_berlin">
+					<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+					<div id="i_title_daily_berlin_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_daily_berlin_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/3_1.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/3_1_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_youbike">
+					<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+					<div id="i_title_hourly_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_hourly_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/4_0.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/4_0_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_berlin">
+					<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+					<div id="i_title_hourly_berlin_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_hourly_berlin_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/4_1.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/4_1_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_youbike">
+					<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+					<div id="i_title_duration_distance_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_duration_distance_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/5_0_0.png"></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/5_0_1.png"></div>
+				</div>
+				<br><br><br>
+				<div class="c_berlin">
+					<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+					<div id="i_title_duration_distance_berlin_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_duration_distance_berlin_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/5_1_0.png"></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/5_1_1.png"></div>
+				</div>
+				<br><br><br>
+				<div class="c_youbike">
+					<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+					<div id="i_title_mesh_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_mesh_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/6_0.png"></div>
+					<div class="c_div_mobile_legend">
+						<img class="c_image_legend_mobile" src="image/mobile/6_0_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_berlin">
+					<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+					<div id="i_title_mesh_berlin_mobile" class='c_title_l color_white_css'></div><br>
+					<div id="i_content_mesh_berlin_mobile" class='c_content_l color_white_css'></div><br>
+					<div class="c_div_mobile"><img class="c_image_mobile" src="image/mobile/6_1.png"></div>
+					<div id="i_content_weekly_mobile">
+						<img class="c_image_legend_mobile" src="image/mobile/6_1_legend.png">
+					</div><br>
+				</div>
+				<br><br><br>
+				<div class="c_title_m color_white_css">© Technologiestiftung Berlin 2020</div>
+				<br><br>
+
+			</div> 
+
+	</section>
+
+	<main>
+
+		<section id='intro_title'>
+
+			<div id='intro_title_main'>
+				
+				<div id='intro_title_left'>
+					<img src="image/berlin_tech.gif" height="25px">
+				</div>
+
+				<div id='intro_title_right' class="color_white_css">
+					<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_language_en" href="index.html?c=1&l=0">EN</a></span>　
+					<!--<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_language_de" href="index.html?c=1&l=2">DE</a></span>　-->
+					<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_language_zh" href="index.html?c=1&l=1">中文</a></span>
+					　|　
+					<span class="c_content_m">PROJECT BY / 
+						<span class="text_dec_underline"><a href="https://www.linkedin.com/in/kevin-cheng-a6216244/" target="_blank">Kevin Cheng</a></span>
+					</span>
+				</div> 
+
+			<div class="clear"></div> 
+
+		</section>
+
+		<section id='intro'>
+				<div id="div_id_top" class='c_title left'>
+					<div id="div_id_top_basic" class='c_content_ll c_text_anchor_start color_white_css'>
+					</div>
+				</div>
+		</section>
+
+		<section id='scrolly'>
+
+			<figure>
+
+					<div id="div_id_main">
+					  <div id="div_id_main_basic">
+					  </div>
+					</div>
+
+			</figure>
+
+			<article>
+
+				<div>
+					<div class='step' data-step='1'>
+						<div class='step_back' id="i_step_1">
+							<div id="i_title_intro" class='c_title_l color_white_css'></div><br>
+							<div id='i_content_intro' class='c_content_l color_white_css'></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_youbike">
+					<div class='step' data-step='2'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+							<div id="i_title_weekly" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_weekly" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_weekly"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_berlin">
+					<div class='step' data-step='3'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+							<div id="i_title_weekly_berlin" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_weekly_berlin" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_weekly_berlin"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_youbike">
+					<div class='step' data-step='4'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+							<div id="i_title_daily" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_daily" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_daily"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_berlin">
+					<div class='step' data-step='5'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+							<div id="i_title_daily_berlin" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_daily_berlin" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_daily_berlin"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_youbike">
+					<div class='step' data-step='6'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+							<div id="i_title_hourly" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_hourly" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_hourly"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_berlin">
+					<div class='step' data-step='7'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+							<div id="i_title_hourly_berlin" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_hourly_berlin" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_hourly_berlin"></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_youbike">
+					<div class='step' data-step='8'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+							<div id="i_title_duration_distance" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_duration_distance" class='c_content_l color_white_css'></div><br><br>
+						</div>
+					</div>
+				</div>
+				<div class="c_berlin">
+					<div class='step' data-step='9'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+							<div id="i_title_duration_distance_berlin" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_duration_distance_berlin" class='c_content_l color_white_css'></div>
+						</div>
+					</div>
+				</div>
+				<div class="c_youbike">
+					<div class='step' data-step='10'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_taipei c_title_m color_white_css'></p><br><br>
+							<div id="i_title_mesh" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_mesh" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_mesh"></div>
+						</div>
+					</div>
+				</div>
+				<br><br><br><br><br><br><br><br>
+				<div class="c_berlin">
+					<div class='step' data-step='12'>
+						<div class='step_back'>
+							<p class='c_title_city c_title_city_berlin color_white_css c_title_m'></p><br><br>
+							<div id="i_title_mesh_berlin" class='c_title_l color_white_css'></div><br>
+							<div id="i_content_mesh_berlin" class='c_content_l color_white_css'></div><br><br>
+							<div id="div_id_legend_mesh_berlin"></div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+			</article>
+
+		</section>
+
+		<section id='outro'>
+
+			<div id='outro_info_main'>
+
+				<div id='outro_info_left'>
+					<div class="c_title_m color_white_css">© Technologiestiftung Berlin 2020</div>
+				</div>
+
+				<div id='outro_info_right' class="color_white_css">
+
+					<div class="c_content_m c_line_height_36">
+						<span>PROJECT BY / 
+							<span class="text_dec_underline"><a href="https://www.linkedin.com/in/kevin-cheng-a6216244/" target="_blank">Kevin Cheng</a></span>
+						</span>
+						　
+						<span>SUPERVISED BY / 
+							<span class="text_dec_underline"><a href="https://www.sebastianmeier.eu/" target="_blank">Dr. Sebastian Meier</a></span>
+						</span>
+					</div>
+					
+					<div>
+						<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_data_source">DATA SOURCE</a></span>　
+						<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_leagal_note">LEAGAL NOTE</a></span>　
+						<span class="c_content_m text_dec_underline c_cursor"><a id="i_text_privacy">PRIVACY</a></span>　
+						<span class="c_content_m">VERSION 1.0　02.03.2020</span>
+					</div>
+
+				</div>
+
+			</div> 
+			<div class="clear"></div> 
+
+		</section>
+
+	</main>
+
+
+	<script src='js_library/stickyfill.min.js'></script>
+	<script src='js_library/scrollama.min.js'></script>
+	<script src='js/script.js'></script>
+
+    <div id="includedContent"></div>
+    <script> 
+    $(function(){
+      $("#includedContent").load("dialog.html"); 
+    });
+    </script>
+
+    <script type="text/javascript">
+
+      	function main() {
+
+			let attrs = getUrlVars();
+			
+			g_version = (attrs.v == null) ? g_version : parseInt(attrs.v);
+			g_language = (attrs.l == null) ? g_language : parseInt(attrs.l);
+
+			console.log("g_version", g_version)
+			console.log("g_language", g_language)
+
+			// --------------------------
+
+			{
+				$("#i_text_language_en").css("color", COLOR_GREY);
+		  		$("#i_text_language_zh").css("color", COLOR_GREY);
+		  		$("#i_text_language_de").css("color", COLOR_GREY);
+
+				switch (g_language) {
+					case LANGUAGE.EN: $("#i_text_language_en").css("color", COLOR_WHITE); break;
+					case LANGUAGE.ZH: $("#i_text_language_zh").css("color", COLOR_WHITE); break;
+					case LANGUAGE.DE: $("#i_text_language_de").css("color", COLOR_WHITE); break;
+				}
+			}
+
+			// --------------------------
+
+			{
+				$("#i_text_language_en").attr("href", "index.html?v=" + g_version + "&l=" + LANGUAGE.EN);
+		  		$("#i_text_language_zh").attr("href", "index.html?v=" + g_version + "&l=" + LANGUAGE.ZH);
+		  		$("#i_text_language_de").attr("href", "index.html?v=" + g_version + "&l=" + LANGUAGE.DE);
+			}
+
+			// --------------------------
+
+			switch (g_version) 
+			{
+				case VERSION.YOUBIKE:{
+
+			        $(".c_berlin").hide()
+		        	$(".c_title_city").hide()
+		        	
+		        	break
+	        	}
+				case VERSION.COMPARE:{
+
+		        	$(".c_berlin").show()
+		        	$(".c_title_city").show()
+		        	
+		        	break
+	        	}
+			}
+
+			// --------------------------
+	        
+			{
+				loadData_Weekly_YouBike(g_sFilePath, "weekly_youbike") 
+				loadData_Weekly_Berlin(g_sFilePath, "weekly_berlin") 
+		        loadData_Daily_YouBike(g_sFilePath, "daily_youbike")
+		        loadData_Daily_Berlin(g_sFilePath, "daily_berlin")
+		        loadData_Mesh_YouBike(g_sFilePath, "station_mesh_youbike")
+		        loadData_Mesh_Berlin(g_sFilePath, "mesh_berlin")
+		        loadData_Mesh_Text(g_sFilePath, "text")
+			}
+      	}
+
+    </script>
+
+
+<script type="text/javascript">
+    
+  window.load = main();
+
+</script>
+
+</body>
+
+</html>
